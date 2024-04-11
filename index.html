@@ -16,8 +16,8 @@
 		<link rel = "stylesheet" href = "main.css" type = "text/css">
 		
 		<!-- favicon -->
-		<link rel = "icon" href = "images/Mouka-Logo.png">
-		<title>Mouka - Adding comfort to life</title>
+		<link rel = "icon" href = "images/logo.jpg">
+		<title>Jeysree Fashions</title>
 	</head>
 	
 	<body>
@@ -25,7 +25,7 @@
 		<section class = "navbar">
 			<div class = "container">
 				<nav>
-					<img class = "logo" src = "images/Mouka-Logo.png" alt = "mouka logo">
+					<img class = "logo" src = "images/logo.jpg" alt = "mouka logo">
 					<ul class = "nav-items">
 						<i class="fas fa-times fa-2x close-menu"></i>
 						<li><a href = "#">Home</a></li>
@@ -42,12 +42,28 @@
 			</div>
 		</section>
 		
-		<!-- header section -->
-		<section class = "header">
-			<div class = "container">
-				<img class = "banner1" src = "images/FindYourMoukawebsitebanner-1-1-1440x568.jpg" alt = "Mouka banner">
-			</div>
-		</section>
+		<div class="slider">
+			<img
+			  id="img-1"
+			  src="images/kapok india products.jpeg"
+			  alt="Image 1"
+			/>
+			<img
+			  id="img-2"
+			  src="images/Mattress is Best-1140x600.jpg"
+			  alt="Image 2"
+			/>
+			<img
+			  id="img-3"
+			  src="images/Kapok Fiber Pod.jpg"
+			  alt="Image 3"
+			/>
+		</div>
+		<div class="navigation-button">
+			<span class="dot active" onclick="changeSlide(0)"></span>
+			<span class="dot" onclick="changeSlide(1)"></span>
+			<span class="dot" onclick="changeSlide(2)"></span>
+		</div>
 		
 		<!-- products section -->
 		<div class = "container">
@@ -288,7 +304,7 @@
 		<!-- copyright section -->
 		<section class = "copyright">
 			<div class = "space-between container">
-				<p>© Mouka Limited</p>
+				<p>© Jeysree Fashions</p>
 				<p>All Rights Reserved.</p>
 			</div>
 		</section>
