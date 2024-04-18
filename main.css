@@ -210,7 +210,7 @@ nav {
 
 .product-link {
 	display: inline-block;
-	width: 90%;
+	width: 100%;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -240,14 +240,14 @@ nav {
 }
 
 .product-card {
-	width: 80%;
+	width: 120%;
 	margin: 15px auto;
 }
 
 .product-description {
 	padding: 10px 0 15px;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 	box-shadow: 2px 5px 8px rgb(248, 248, 248),
 				-2px 5px 10px rgb(242, 242, 232);
 }
@@ -573,6 +573,10 @@ hr {
 		margin: 25px 40px;
 	}
 	
+	.product-description {
+		display: none;
+	}
+
 	.product-link:hover {
 		background-color: initial;
 		color: initial;

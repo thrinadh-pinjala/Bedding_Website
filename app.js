@@ -86,3 +86,11 @@ function calculateDays(today, eventDate) {
 
   return Math.ceil(difference / (1000 * 3600 * 24)); // convert to days
 }
+
+// Function to toggle the visibility of the pillows description
+function toggleProductDescription(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    if (description) {
+        description.style.display = (description.style.display === 'none') ? 'block' : 'none';
+    }
+}
