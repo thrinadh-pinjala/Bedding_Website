@@ -118,11 +118,11 @@ nav {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px var(--main-spacing);
+	padding: 15px var(--main-spacing);
 }
 
 .logo {
-	width: 65px;
+	width: 70px;
 	height: 50px;
 }
 
@@ -131,13 +131,13 @@ nav {
 }
 
 /* hides the expanded nav bar */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1225px) {
 	.nav-items {
 		position: fixed;
 		left: 0;
 		top: 0;
 		background-color: rgba(48,48,48,.97);
-		width: calc(100vw - 65px);
+		width: calc(150vw - 65px);
 		height: 100vh;
 		overflow-y: scroll;
 		padding: 20px 0 20px var(--main-spacing);
@@ -159,7 +159,7 @@ nav {
 	.nav-items > li > a {
 		color: #c4c4c4;
 		font-size: 1.5rem;
-		font-weight: 600;
+		font-weight: 400;
 		text-transform: uppercase;
 	}
 	
