@@ -1,0 +1,338 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    transition: background 0.3s;
+}
+
+.page-header {
+    text-align: center;
+    padding: 70px 0;
+    background: linear-gradient(270deg, #de694c, #df955c, #131c2d, #081211);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.page-header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    animation: fadeInDown 1s ease-out;
+}
+
+.page-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    background-color: #081211;
+    color: white;
+    padding: 6px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-items li {
+    margin: 0 15px;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: #f4b400;
+}
+
+.cta {
+    background-color: #f4b400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #db9d00;
+    transform: scale(1.1);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 90%;
+    transition: margin 0.3s;
+}
+
+.cards {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    max-width: calc(33.333% - 20px); /* Ensure the card does not exceed the allocated space */
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cards:hover .title h1 {
+    color: #f4b400;
+}
+
+.cards:hover .description button {
+    background-color: #f4b400;
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover .image img {
+    transform: scale(1.1);
+}
+
+.title h1 {
+    font-size: 1.2em;
+    margin: 15px;
+    color: #333;
+    transition: color 0.3s;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.description {
+    padding: 0 15px 15px;
+    transition: color 0.3s;
+}
+
+.description p {
+    color: #555;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.description button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #db9d00;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.description button:hover {
+    background-color: #f4b400;
+    transform: scale(1.05);
+}
+
+.dark-mode {
+    background: #121212;
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .nav-items a {
+    color: #ccc;
+}
+
+.dark-mode .nav-items a:hover {
+    color: #f4b400;
+}
+
+.dark-mode .cta {
+    background-color: #f4b400;
+    color: #333;
+}
+
+.dark-mode .cta:hover {
+    background-color: #db9d00;
+}
+
+.dark-mode .cards {
+    background: #1e1e1e;
+}
+
+.dark-mode .title h1 {
+    color: #ccc;
+}
+
+.dark-mode .description p {
+    color: #aaa;
+}
+
+.dark-mode .description button {
+    background-color: #333;
+    color: #f4b400;
+}
+
+.dark-mode .description button:hover {
+    background-color: #444;
+}
+
+.added-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    animation: fadeInOut 2s ease forwards;
+    z-index: 1000;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Footer and Copyright Styling */
+footer {
+    background-color: #222;
+    padding: 30px 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h2 {
+    color: #f4b400;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #f4b400;
+}
+
+.footer-column time {
+    font-style: italic;
+}
+
+.copyright {
+    background-color: #333;
+    color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
