@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset = "utf-8">
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 		<meta name = "description" content = "Visit any of our Sleep Galleries to discuss with our sleep specialists who will ensure you get the right Mouka products for a great night's sleep. The Sleep ...">
 		
@@ -18,121 +18,274 @@
 		<!-- favicon -->
 		<link rel = "icon" href = "images/logo.jpg">
 		<title>Nagarathinam Silk Cotton</title>
-	</head>
-	
-	<body>
-		<!-- nav bar section -->
-		<section class = "navbar" style="width: 100%;">
-			<div class = "container">
-				<nav>
-					<img class = "logo" src = "images/logo.jpg" alt = "mouka logo">
-					<ul class = "nav-items">
-						<i class="fas fa-times fa-2x close-menu"></i>
-						<li><a href = "index.html">Home       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li><a href = "single_size.html">Single Size &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li><a href = "queen_size.html">Queen Size</a></li>
-						<li><a href = "king_size.html">King Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li><a href = "double_size.html">Double Size &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li><a href = "hostel_bed.html">Hostel Bed &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<a href = "https://whatsform.com/st5nbd" class = "cta">Order Now!</a>
-					</ul>
-					<i class="fas fa-bars menu"></i>
-				</nav>
-			</div>
-		</section>
-		<br> <br>
-		<div class="slider">
-			<img
-			  id="img-1"
-			  src="images/kapok india products.jpeg"
-			  alt="Image 1"
-			/>
-			<img
-			  id="img-2"
-			  src="images/Mattress is Best-1140x600.jpg"
-			  alt="Image 2"
-			/>
-			<img
-			  id="img-3"
-			  src="images/Kapok Fiber Pod.jpg"
-			  alt="Image 3"
-			/>
-		</div>
-		<div class="navigation-button">
-			<span class="dot active" onclick="changeSlide(0)"></span>
-			<span class="dot" onclick="changeSlide(1)"></span>
-			<span class="dot" onclick="changeSlide(2)"></span>
-		</div>		
-		<!-- feature section -->
-		<section class = "features">
-			<div class = "container">
-				<header>
-					<h3>What Makes Nagarathinam Silk Cotton Perfect For You?</h3>
-				</header>
-				<div class = "features-container">
-					<div class = "feature-box">
-						<h4>Perfected Design</h4>
-						<p>
-							Every material we use in the design of our mattresses
-							is carefully sourced and selected for 
-							its unique properties.
-						</p>
-					</div>
-					
-					<div class = "feature-box">
-						<h4>Advanced Technology</h4>
-						<p>
-							Our innovative technology ensures that every
-							one of our mattresses is cool and comfortable for your use.
-						</p>
-					</div>
-					
-					<div class = "feature-box">
-						<h4>Top Quality</h4>
-						<p>
-							Everything we do at NagarathinamSilkCotton is done so you get the very best with every
-							mattress we produce without compromising on quality and choice.
-						</p>
-					</div>
-					
-					<div class = "feature-box">
-						<h4>Superb Comfort</h4>
-						<p>
-							Because everyone is different, we have created different mattress
-							variants for different body types, comfort levels and budgets.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
 
-		<!-- footer section -->
-		<footer>
-						<div class = "">
-				<h2>Customer Care</h2>
-				<ul>
-					<li>Office Hours:</li>
-					<li>Monday - Friday:</li>
-					<li><time datetime = "08:00">8:00AM</time> to <time datetime = "17:00">5:00PM</time></li>
-					<li><a href =  "tel:09087202420">Calls Only: 0908 720 2420</a></li>
-					<li><a href =  "#">WhatsApp Only: 0908 720 1966</a></li>
-				</ul>
-			</div>
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav label.design {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a.active {
+            background-color: #ff9900;
+            border-radius: 5px;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            overflow: hidden;
+        }
+
+        .slider img {
+            width: 100%;
+            display: none;
+            animation: fade 3s infinite;
+        }
+
+        .slider img.active {
+            display: block;
+        }
+
+        @keyframes fade {
+            0%, 33%, 100% { opacity: 0; }
+            33.33%, 66.66% { opacity: 1; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            flex: 1 1 calc(20% - 2rem);
+            max-width: calc(20% - 2rem);
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .card-content p {
+            margin: 0.5rem 0;
+            color: #777;
+        }
+
+        .card-content .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background-color: #ff9900;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .card-content .btn:hover {
+            background-color: #e68a00;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .features {
+            background-color: #fff;
+            padding: 2rem 0;
+        }
+
+        .features header h3 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .features-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 1rem;
+            max-width: 250px;
+            flex: 1 1 250px;
+        }
+
+        .feature-box img {
+            width: 80px;
+            height: auto;
+        }
+
+        .feature-box h4 {
+            color: #333;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .feature-box p {
+            color: #777;
+        }
+
+        .copyright {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+		<img class="logo" src="images/logo.jpg" alt="mouka logo" width="250">
+        <label class="design">Nagarathinam Silk Cotton Mattress</label>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="https://whatsform.com/st5nbd" class="active">Cart</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <img src="images/kapok india products.jpeg" alt="Image 1" class="active">
+        <img src="images/Mattress is Best-1140x600.jpg" alt="Image 2">
+        <img src="images/Kapok Fiber Pod.jpg" alt="Image 3">
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="images/kingsize.jpg" alt="King Size">
 			
-			<!-- go to top -->
-			<i class="fas fa-arrow-up fa-2x"></i>
-		</footer>
-		<hr>
-		<!-- copyright section -->
-		<section class = "copyright">
-			<div class = "space-between container">
-				<p>© NagarathinamSilkCotton</p>
-				<p>All Rights Reserved.</p>
-			</div>
-		</section>
-		
-		<script src = "app.js" charset = "utf-8"></script>
-		
-		
-	</body>
+            <div class="card-content">
+                <h3>King Size</h3>
+                <p>Cost starts from Rs.7,600</p>
+                <a href="king_size.html" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/queensize.jpg" alt="Queen Size">
+            <div class="card-content">
+                <h3>Queen Size</h3>
+                <p>Cost starts from Rs.6,600</p>
+                <a href="queen_size.html" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/hostelsize.jpg" alt="Hostel Size">
+            <div class="card-content">
+                <h3>Hostel Size</h3>
+                <p>Cost starts from Rs.3,500</p>
+                <a href="hostel_bed.html" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/singlesize.jpg" alt="Single Size">
+            <div class="card-content">
+                <h3>Single Size</h3>
+                <p>Cost starts from Rs.3,000</p>
+                <a href="single_size.html" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/doublesize.jpg" alt="Double Size">
+            <div class="card-content">
+                <h3>Double Size</h3>
+                <p>Cost starts from Rs.5,000</p>
+                <a href="double_size.html" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    
+                
+                
+
+    <script>
+        const sliderImages = document.querySelectorAll('.slider img');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            sliderImages[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+            sliderImages[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000);
+    </script>
+</body>
 </html>
