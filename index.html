@@ -14,7 +14,7 @@
         }
 
         nav {
-            background-color: #333;
+            background-color: #000000;
             color: #fff;
             padding: 1rem;
             display: flex;
@@ -45,7 +45,7 @@
         }
 
         nav ul li a.active {
-            background-color: #ff9900;
+            background-color: #f4b400;
             border-radius: 5px;
         }
 
@@ -64,7 +64,7 @@
         }
 
         .slider img.active {
-            display: block;
+            display: relative;
         }
 
         @keyframes fade {
@@ -199,10 +199,15 @@
 </head>
 <body>
     <nav>
-		<img class="logo" src="images/logo.jpg" width="150">
-        <label class="design">Nagarathinam Silk Cotton Mattress</label>
+		<img class="logo" src="images/logo.jpg" width="150" margin="100">
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <i class="fas fa-times fa-2x close-menu"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="single_size.html">Single Size</a></li>
+            <li><a href="queen_size.html">Queen Size</a></li>
+            <li><a href="king_size.html">King Size</a></li>
+            <li><a href="double_size.html">Double Size</a></li>
+            <li><a href="hostel_bed.html">Hostel Bed</a></li>
             <li><a href="https://whatsform.com/st5nbd" class="active">Order Now!</a></li>
         </ul>
     </nav>
@@ -220,7 +225,7 @@
             <div class="card-content">
                 <h3>King Size</h3>
                 <p>Cost starts from Rs.7,600</p>
-                <a href="king_size.html" class="btn">Read More</a>
+                <a href="king_size.html" class="btn">View</a>
             </div>
         </div>
         <div class="card">
@@ -228,7 +233,7 @@
             <div class="card-content">
                 <h3>Queen Size</h3>
                 <p>Cost starts from Rs.6,600</p>
-                <a href="queen_size.html" class="btn">Read More</a>
+                <a href="queen_size.html" class="btn">View</a>
             </div>
         </div>
         <div class="card">
@@ -236,7 +241,7 @@
             <div class="card-content">
                 <h3>Hostel Size</h3>
                 <p>Cost starts from Rs.3,500</p>
-                <a href="hostel_bed.html" class="btn">Read More</a>
+                <a href="hostel_bed.html" class="btn">View</a>
             </div>
         </div>
         <div class="card">
@@ -244,7 +249,7 @@
             <div class="card-content">
                 <h3>Single Size</h3>
                 <p>Cost starts from Rs.3,000</p>
-                <a href="single_size.html" class="btn">Read More</a>
+                <a href="single_size.html" class="btn">View</a>
             </div>
         </div>
         <div class="card">
@@ -252,7 +257,7 @@
             <div class="card-content">
                 <h3>Double Size</h3>
                 <p>Cost starts from Rs.5,000</p>
-                <a href="double_size.html" class="btn">Read More</a>
+                <a href="double_size.html" class="btn">View</a>
             </div>
         </div>
     </div>
