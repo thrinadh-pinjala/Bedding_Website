@@ -156,6 +156,12 @@ body {
     transform: scale(1.05);
 }
 
+.cards img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 .image img {
     width: 100%;
     height: auto;
@@ -334,4 +340,26 @@ footer {
     padding: 15px 0;
     text-align: center;
     font-size: 0.9em;
+}
+
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 90%;
+    animation: fade 3s infinite;
+}
+
+.slider img.active {
+    display: relative;
+}
+
+@keyframes fade {
+    0%, 33%, 100% { opacity: 0; }
+    33.33%, 66.66% { opacity: 1; }
 }
