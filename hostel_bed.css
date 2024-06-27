@@ -335,3 +335,76 @@ footer {
     text-align: center;
     font-size: 0.9em;
 }
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;  /* Decreased padding */
+    text-align: left;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer .footer-section {
+    flex: 1;
+    padding: 10px 20px;  
+}
+
+.footer .footer-section h2 {
+    font-size: 1.5em;  
+    margin-bottom: 10px;
+}
+
+.footer .footer-section p {
+    margin: 5px 0;  
+}
+
+.footer .footer-section a {
+    color: #00f2ff;
+    text-decoration: none;
+}
+
+.footer .footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    padding: 10px;  
+    border-top: 1px solid #444;
+    margin-top: 10px;
+}
+
+.footer .about, .footer .contact {
+    flex: 2;
+}
+
+.footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .links ul li {
+    margin: 5px 0; 
+}
+
+.footer .links ul li a {
+    color: #fff;
+}
+
+.footer .links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Icons */
+.footer .footer-section i {
+    margin-right: 10px;
+}
+
+
