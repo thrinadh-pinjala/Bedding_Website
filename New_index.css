@@ -139,7 +139,7 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    max-width: calc(33.333% - 20px); /* Ensure the card does not exceed the allocated space */
+    max-width: calc(33.333% - 20px); 
 }
 
 .cards:hover {
@@ -285,7 +285,7 @@ body {
 /* Footer and Copyright Styling */
 footer {
     background-color: #222;
-    padding: 30px 0;
+    padding: 20px 0;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -363,4 +363,86 @@ footer {
 @keyframes fade {
     0%, 33%, 100% { opacity: 0; }
     33.33%, 66.66% { opacity: 1; }
+}
+
+/* General styles for footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;  /* Decreased padding */
+    text-align: left;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer .footer-section {
+    flex: 1;
+    padding: 10px 20px;  
+}
+
+.footer .footer-section h2 {
+    font-size: 1.5em;  
+    margin-bottom: 10px;
+}
+
+.footer .footer-section p {
+    margin: 5px 0;  
+}
+
+.footer .footer-section a {
+    color: #00f2ff;
+    text-decoration: none;
+}
+
+.footer .footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    padding: 10px;  
+    border-top: 1px solid #444;
+    margin-top: 10px;
+}
+
+.footer .about, .footer .contact {
+    flex: 2;
+}
+
+.footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .links ul li {
+    margin: 5px 0; 
+}
+
+.footer .links ul li a {
+    color: #fff;
+}
+
+.footer .links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Icons */
+.footer .footer-section i {
+    margin-right: 10px;
+}
+
+.warning-message {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
 }
