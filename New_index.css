@@ -526,3 +526,125 @@ footer {
     line-height: 1.6;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.features h1 {
+    color: #2d3436;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.feature-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+
+.feature-card p {
+    color: #636e72;
+}
+
+
+
+.info-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.info-section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3436;
+    position: relative;
+}
+
+.info-section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #00a8cc;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.info-text {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #00a8cc;
+    border-radius: 5px;
+}
+
+.info-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.info-list li::before {
+    content: '✓';
+    color: #00a8cc;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.info-list span {
+    font-weight: bold;
+    color: #2d3436;
+}
