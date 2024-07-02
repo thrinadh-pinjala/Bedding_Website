@@ -31,7 +31,89 @@
     <header class="page-header">
         <h1>Original Kapok Silk Cotton Mattress</h1>
     </header>
+    
+    <div class="content">
+        <div class="section">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <div class="text"></div>
+                    <img src="images/IMG_7536.JPG" alt="COTTON">
+                </div>
+                <div class="slides">
+                    <div class="text"></div>
+                    <img src="images/IMG_7538.JPG" alt="PURE COTTON">
+                </div>
+                <div class="slides">
+                    <div class="text"></div>
+                    <img src="images/IMG_7545.JPG" alt="BEDS">
+                </div>
+                <div class="slides">
+                    <div class="text"></div>
+                    <img src="images/IMG_7573.JPG" alt="PILLOWS">
+                </div>
+                <div class="slides">
+                    <div class="text"></div>
+                    <img src="images/IMG_7574.JPG" alt="SAFE CARE">
+                </div>
+                <div class="slides">
+                    <div class="text"></div>
+                    <img src="images/IMG_7610.JPG" alt="HANDLED WITH CARE">
+                </div>
+                <div class="slides">
+                    <div class="text"></div>
+                    <img src="images/IMG_7625.JPG" alt="100% PURE">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+showSlides();
 
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function plusSlides(n) {
+    slideIndex += n;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    if (slideIndex < 1) {slideIndex = slides.length}
+    showSlides(slideIndex);
+}
+
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides();
+}
+
+    </script>
+    
+        
     <div class="warning-message">
         <p>⚠️ Only Whatsapp orders will be considered ⚠️</p>
     </div>
