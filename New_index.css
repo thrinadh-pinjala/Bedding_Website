@@ -694,8 +694,8 @@ body {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    width: 1400px; /* Set the desired width */
-    height: 700px; /* Set the desired height */
+    width: 1200px; /* Set the desired width */
+    height: 500px; /* Set the desired height */
     margin: auto;
     overflow: hidden;
     background-color: #000; /* Optional: Add a background color to fill any extra space */
